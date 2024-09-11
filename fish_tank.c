@@ -1,11 +1,12 @@
-#include<math.h>
-#include<stdio.h>
+#include <math.h>
+#include <stdio.h>
 
 
 
 int main(void)
 {
-	float length, width, height, volume_cubid_inches, amount_in_gallons;
+	float length, width, height;
+	float volume_cubid_inches, rounded_num, amount_in_gallons;
 
 	//get diamensions
 	printf("What is the length of the fish tank (to the nearest half inch); ");
@@ -26,8 +27,10 @@ int main(void)
 	printf("The amount of water needed to fill this tank is - %.2f gallons\n", amount_in_gallons);
 
 	// now lets do some rounding
-	///printf("The amount of water needed using the round function is -%.2f gallons\n", round(amount_in_gallons));
-//something wrong with round function
+	rounded_num = round(amount_in_gallons);
+	printf("The amount of water needed using the round function is -%.2f gallons\n", rounded_num);
+
+     // something wrong with round function
 	return 0;
 
 }
