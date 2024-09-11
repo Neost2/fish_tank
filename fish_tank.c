@@ -1,5 +1,6 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include<math.h>
+
 
 int main(void)
 {
@@ -15,16 +16,16 @@ int main(void)
 
 	// do the math
 	volume_cubid_inches = length * width * height;
-	amount_in_gallons = volume_cubid_inches / 231:
+	amount_in_gallons = volume_cubid_inches / 231;
 
 	// show input and thenshow volume
-	printf("The volume of a fish tank having length - %1f width -- %1f and height - %1f is %2f cubic inches\n", length, width, height, volume_cubid_inches");
+	printf("The volume of a fish tank having length - %1f width -- %1f and height - %1f is %2f cubic inches\n", length, width, height, volume_cubid_inches);
 
 	// show output in gallons now
 	printf("The amount of water needed to fill this tank is - %2f gallons\n", amount_in_gallons);
 
 	// now lets do some rounding
-	printf("The amount of water needed using the round function is -%2f gallons\n", round(amount_in_gallons);
+	printf("The amount of water needed using the round function is -%2f gallons\n", round(amount_in_gallons));
 
 	return 0;
 
